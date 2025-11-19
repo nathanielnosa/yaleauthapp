@@ -120,6 +120,19 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# media conf
+MEDIA_URL = '/image/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'image')
+
+# email conf
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  
+EMAIL_HOST_USER = "proncode@gmail.com" 
+EMAIL_HOST_PASSWORD = "fbvkfmksqappymxd" 
+EMAIL_PORT = 587  
+EMAIL_USE_TLS = True  
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
